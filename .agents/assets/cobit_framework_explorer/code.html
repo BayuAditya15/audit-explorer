@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#dae2fd", "primary": "#004ac6", "error-container": "#ffdad6", "on-error-container": "#93000a", "background": "#f7f9fb", "error": "#ba1a1a", "on-background": "#191c1e", "tertiary-fixed-dim": "#b7c8e1", "on-tertiary-fixed-variant": "#38485d", "outline-variant": "#c3c6d7", "secondary-container": "#dae2fd", "on-tertiary-fixed": "#0b1c30", "on-surface": "#191c1e", "surface-container": "#eceef0", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "primary-fixed-dim": "#b4c5ff", "surface": "#f7f9fb", "tertiary-fixed": "#d3e4fe", "surface-tint": "#0053db", "on-primary-fixed": "#00174b", "on-secondary-container": "#5c647a", "surface-container-high": "#e6e8ea", "on-secondary-fixed": "#131b2e", "secondary-fixed-dim": "#bec6e0", "surface-bright": "#f7f9fb", "surface-container-highest": "#e0e3e5", "inverse-on-surface": "#eff1f3", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-primary-container": "#eeefff", "on-secondary-fixed-variant": "#3f465c", "on-secondary": "#ffffff", "surface-container-low": "#f2f4f6", "primary-container": "#2563eb", "inverse-primary": "#b4c5ff", "surface-variant": "#e0e3e5", "tertiary": "#46566c", "outline": "#737686", "on-surface-variant": "#434655", "primary-fixed": "#dbe1ff", "on-tertiary-container": "#e9f0ff", "surface-dim": "#d8dadc", "inverse-surface": "#2d3133", "on-primary-fixed-variant": "#003ea8", "secondary": "#565e74", "tertiary-container": "#5e6e85" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.25rem", "space-lg": "1rem", "margin": "1rem", "space-3xl": "3rem", "space-2xs": "0.125rem", "space-2xl": "2rem", "space-xl": "1.5rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "space-md": "0.75rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "label-md": ["Inter"], "code-sm": ["JetBrains Mono"], "headline-lg": ["Inter"], "headline-sm": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "code-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "400" }], "display-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-inverse-surface border-r border-outline-variant/20 z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-[68px] px-space-lg flex items-center gap-space-sm border-b border-outline-variant/10"><img alt="COBIT Explorer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Va9b63vLrgooAdWds0CaSCL4R-b6ij8Y998uF8g-oLL07cyC1yS2Ep7OpeDpuP09UbtG9On45RlntZZK6oAapRAGG7Laf1wubyCjJBfJFkUBEXf17b9F4evrA1X-ryqOxzs0VCoLmmQljDOfENsuv4eegkBo8a9E_XytQSmCYLEQcjaC3q40oeitLMbip7-LbMxdg7vNmlxI4vYqI_0MYLbM81bsD0AKnlruB6xxxJu6KxcNMb6kacWCfX"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-inverse-on-surface truncate leading-tight">COBIT Explorer</span><span class="font-label-sm text-label-sm text-outline-variant truncate leading-tight">Governance &amp; Management</span></div></div><div class="px-space-md py-space-lg"><div class="mb-space-lg"><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Main Menu</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all font-label-lg text-label-lg" data-path="overview" href="#">Overview</a><a aria-current="page" class="flex items-center px-space-sm py-space-sm transition-all bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm" data-path="cobit-framework" href="#">COBIT Framework</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all font-label-lg text-label-lg" data-path="raci-matrix" href="#">RACI Matrix</a></nav></div><div class="mb-space-md"><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Assessment</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all font-label-lg text-label-lg" data-path="assessment" href="#">Assessment</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all font-label-lg text-label-lg" data-path="evidence" href="#">Evidence</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all font-label-lg text-label-lg" data-path="reports" href="#">Reports</a></nav></div></div></div><div class="p-space-md border-t border-outline-variant/10 flex flex-col gap-space-xs bg-inverse-surface"><nav class="flex flex-col" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all font-label-lg text-label-lg" data-path="settings" href="#">Settings</a></nav><div class="flex items-center justify-between p-space-xs mt-space-2xs rounded-lg hover:bg-surface-variant/10 transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-primary ring-2 ring-inverse-surface"></span></div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-inverse-on-surface font-semibold truncate leading-tight">Ahmad Dahlan</span><span class="font-body-sm text-body-sm text-outline-variant truncate leading-tight">Lead IT Auditor</span></div></div><button class="text-outline-variant hover:text-inverse-on-surface p-space-2xs" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[250px] min-h-screen flex flex-col"><header class="fixed top-0 left-[250px] right-0 h-[68px] bg-surface-container-lowest border-b border-outline-variant/30 z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="COBIT Explorer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Va9b63vLrgooAdWds0CaSCL4R-b6ij8Y998uF8g-oLL07cyC1yS2Ep7OpeDpuP09UbtG9On45RlntZZK6oAapRAGG7Laf1wubyCjJBfJFkUBEXf17b9F4evrA1X-ryqOxzs0VCoLmmQljDOfENsuv4eegkBo8a9E_XytQSmCYLEQcjaC3q40oeitLMbip7-LbMxdg7vNmlxI4vYqI_0MYLbM81bsD0AKnlruB6xxxJu6KxcNMb6kacWCfX"/><div class="flex items-center gap-space-xs font-label-md text-label-md"><span class="text-outline">Home</span><span class="text-outline-variant">/</span><span class="text-on-surface font-medium">COBIT Framework</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="h-9 pl-9 pr-14 w-80 bg-surface-container-low border border-outline-variant/50 rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:border-primary" placeholder="Search objectives, practices, or guidance... (Ctrl+K)" type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 font-code-sm text-code-sm text-outline bg-surface-container rounded border border-outline-variant/40">⌘K</kbd></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm cursor-pointer p-space-xs rounded-lg hover:bg-surface-container-low transition-colors"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-md text-label-md text-on-surface font-medium">Ahmad D.</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div></header><main class="flex-1 w-full pt-[68px] bg-surface"><div class="flex flex-col w-full">
+<div class="px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- PAGE HEADER -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline mb-space-2xs">
+<span>Home</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">COBIT Framework</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">COBIT Framework</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Jelajahi governance objectives, management practices, dan activities COBIT 2019.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap self-start md:self-auto">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          ISACA COBIT 2019 Standard Reference
+        </span>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-low shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">print</span>
+          Cetak / Ekspor
+        </button>
+</div>
+</div>
+<!-- COMPACT METRICS SUMMARY -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Governance &amp; Management</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">40</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Objectives</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">5 Governance (EDM) • 35 Management</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Structure &amp; Alignment</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">231</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Practices</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">Tata Kelola &amp; Operasional Standar</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Implementation Guidance</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">1,202</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Activities</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">Petunjuk Audit &amp; Eksekusi Rinci</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">checklist</span>
+</div>
+</div>
+</div>
+<!-- MAIN TWO-PANEL EXPLORER LAYOUT -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: OBJECTIVE EXPLORER (~40% -> 5 cols on lg) -->
+<section class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Search bar -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder-outline focus:outline-none focus:bg-surface-container-lowest" placeholder="Cari kode atau nama objective..." type="text"/>
+</div>
+<!-- Filter Domain Row -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase tracking-wider">Domain Kerangka</span>
+<span class="font-label-sm text-label-sm text-primary font-medium cursor-pointer hover:underline">Semua Domain (5)</span>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary font-medium shadow-sm" type="button">All</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-medium transition-colors" type="button">EDM (5)</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-medium transition-colors" type="button">APO (14)</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-medium transition-colors" type="button">BAI (11)</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-medium transition-colors" type="button">DSS (6)</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-medium transition-colors" type="button">MEA (4)</button>
+</div>
+</div>
+<!-- Objective Cards List -->
+<div class="flex flex-col gap-space-xs overflow-y-auto max-h-[720px] pr-1">
+<!-- Card 1: SELECTED STATE -->
+<div class="p-space-md rounded-lg bg-secondary-fixed/50 shadow-sm cursor-pointer transition-all flex flex-col gap-1.5 relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold bg-primary text-on-primary px-2 py-0.5 rounded">EDM01</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">EDM • Governance</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Ensured Governance Framework Setting and Maintenance
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Menyediakan pendekatan yang konsisten, terintegrasi, dan selaras dengan tata kelola enterprise...
+            </p>
+<div class="flex items-center gap-2 mt-1 text-outline font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_tree</span>
+                3 Practices
+              </span>
+<span>•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">format_list_bulleted</span>
+                13 Activities
+              </span>
+</div>
+</div>
+<!-- Card 2: EDM02 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">EDM02</span>
+<span class="font-label-sm text-label-sm text-outline font-medium">EDM • Governance</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug">
+              Ensured Benefits Delivery
+            </h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Mengoptimalkan kontribusi bisnis dari investasi TI, mengukur hasil nilai realisasi bisnis portofolio inisiatif.
+            </p>
+<div class="flex items-center gap-2 mt-0.5 text-outline font-label-sm text-label-sm">
+<span>5 Practices</span>
+<span>•</span>
+<span>21 Activities</span>
+</div>
+</div>
+<!-- Card 3: EDM03 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">EDM03</span>
+<span class="font-label-sm text-label-sm text-outline font-medium">EDM • Governance</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug">
+              Ensured Risk Optimization
+            </h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Memastikan selera risiko dan toleransi enterprise diartikulasikan dan dipatuhi secara efektif dalam pengelolaan I&amp;T.
+            </p>
+<div class="flex items-center gap-2 mt-0.5 text-outline font-label-sm text-label-sm">
+<span>3 Practices</span>
+<span>•</span>
+<span>14 Activities</span>
+</div>
+</div>
+<!-- Card 4: EDM04 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">EDM04</span>
+<span class="font-label-sm text-label-sm text-outline font-medium">EDM • Governance</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug">
+              Ensured Resource Optimization
+            </h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Memastikan kapabilitas sumber daya (manusia, proses, dan teknologi) memadai guna mendukung tujuan enterprise.
+            </p>
+<div class="flex items-center gap-2 mt-0.5 text-outline font-label-sm text-label-sm">
+<span>4 Practices</span>
+<span>•</span>
+<span>15 Activities</span>
+</div>
+</div>
+<!-- Card 5: EDM05 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">EDM05</span>
+<span class="font-label-sm text-label-sm text-outline font-medium">EDM • Governance</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug">
+              Ensured Stakeholder Engagement
+            </h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Menjaga pelaporan transparan dan komunikasi terbuka kepada seluruh pemangku kepentingan kunci.
+            </p>
+<div class="flex items-center gap-2 mt-0.5 text-outline font-label-sm text-label-sm">
+<span>4 Practices</span>
+<span>•</span>
+<span>13 Activities</span>
+</div>
+</div>
+<!-- Card 6: APO01 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">APO01</span>
+<span class="font-label-sm text-label-sm text-outline font-medium">APO • Management</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug">
+              Managed I&amp;T Management Framework
+            </h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Merancang, mengintegrasikan, dan memelihara kerangka kerja manajemen TI operasional yang menyeluruh.
+            </p>
+<div class="flex items-center gap-2 mt-0.5 text-outline font-label-sm text-label-sm">
+<span>8 Practices</span>
+<span>•</span>
+<span>41 Activities</span>
+</div>
+</div>
+</div>
+<!-- Pagination Footer -->
+<div class="flex items-center justify-between pt-space-xs mt-space-2xs text-outline font-label-sm text-label-sm">
+<span>Menampilkan 1–6 dari 40 Objectives</span>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded bg-surface-container-low text-outline-variant cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="px-2 py-0.5 rounded bg-primary text-on-primary font-semibold" type="button">1</button>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container-low text-on-surface transition-colors" type="button">2</button>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container-low text-on-surface transition-colors" type="button">3</button>
+<button class="p-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- RIGHT PANEL: OBJECTIVE DETAILS (~60% -> 7 cols on lg) -->
+<section class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<!-- SELECTED OBJECTIVE HEADER -->
+<div class="flex flex-col gap-space-sm">
+<!-- Top Meta Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-3 py-1 rounded">EDM01</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold tracking-wider uppercase">
+                Governance Domain — Evaluate, Direct and Monitor
+              </span>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">content_copy</span>
+                Salin Referensi
+              </button>
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+                Lihat di RACI Matrix
+              </button>
+</div>
+</div>
+<!-- Objective Title -->
+<h2 class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">
+            Ensured Governance Framework Setting and Maintenance
+          </h2>
+<!-- Objective Description -->
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Menganalisis dan mengartikulasikan persyaratan untuk tata kelola TI perusahaan, serta menetapkan dan memelihara struktur tata kelola yang efektif dan proses yang transparan serta dapat dipertanggungjawabkan.
+          </p>
+<!-- Purpose Statement Card -->
+<div class="bg-secondary-fixed/30 rounded-lg p-space-md flex gap-space-md items-start mt-space-2xs">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5 flex-shrink-0">lightbulb</span>
+<div class="flex flex-col gap-1 min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Tujuan (Purpose Statement):</span>
+<p class="font-body-md text-body-md text-on-surface leading-normal">
+                Menyediakan pendekatan yang konsisten, terintegrasi, dan selaras dengan pendekatan tata kelola enterprise secara menyeluruh. Memastikan keputusan terkait I&amp;T dibuat sesuai dengan strategi, arah bisnis, dan prinsip tata kelola yang disepakati.
+              </p>
+</div>
+</div>
+<!-- Compact Meta Stats Strip -->
+<div class="flex items-center gap-4 flex-wrap text-outline font-label-sm text-label-sm py-space-xs bg-surface-container-low px-space-md rounded">
+<span class="text-on-surface font-semibold">3 Management Practices</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface font-semibold">13 Implementation Activities</span>
+<span class="text-outline-variant">•</span>
+<span>Focus: <strong class="text-on-surface">Enterprise Governance</strong></span>
+<span class="text-outline-variant">•</span>
+<span>Tier: <strong class="text-on-surface">Core Standard</strong></span>
+</div>
+</div>
+<!-- PRACTICES & ACTIVITIES SECTION -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+                Practices &amp; Activities (3 Praktik)
+              </h3>
+<span class="font-label-sm text-label-sm text-outline">COBIT 2019 Standard Guidance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Klik pada praktik untuk melihat rincian aktivitas panduan audit dan implementasi.
+            </p>
+</div>
+<!-- Accordion Container -->
+<div class="flex flex-col gap-space-sm" id="cobit-practice-accordion">
+<!-- PRACTICE 1: EXPANDED -->
+<div class="rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col">
+<button class="w-full px-space-md py-space-sm bg-surface-container-low hover:bg-surface-container flex items-center justify-between text-left transition-colors cursor-pointer" onclick="togglePractice('practice-edm01-01', this)" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-code-sm text-code-sm font-bold bg-primary text-on-primary px-2 py-0.5 rounded">EDM01.01</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">
+                    Evaluate the governance system.
+                  </span>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-outline font-medium">4 Activities</span>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 rotate-180" data-chevron="">expand_more</span>
+</div>
+</button>
+<div class="p-space-md bg-surface-container-low/40 flex flex-col gap-space-xs" id="practice-edm01-01">
+<!-- Activity item 1 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">1</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Mengidentifikasi dan memahami semua sumber panduan tata kelola eksternal dan internal yang relevan (hukum, regulasi, standar industri, dan model bisnis).
+                  </p>
+</div>
+<!-- Activity item 2 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">2</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Menilai kecukupan dan efektivitas struktur serta proses tata kelola saat ini terhadap kebutuhan pemangku kepentingan dan profil risiko organisasi.
+                  </p>
+</div>
+<!-- Activity item 3 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">3</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Menentukan keputusan prinsip dasar tata kelola TI untuk alokasi wewenang, pendelegasian kekuasaan, dan mekanisme pelaporan berkala.
+                  </p>
+</div>
+<!-- Activity item 4 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">4</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Mengevaluasi keselarasan desain sistem tata kelola TI dengan strategi bisnis keseluruhan dan tujuan strategis jangka panjang enterprise.
+                  </p>
+</div>
+</div>
+</div>
+<!-- PRACTICE 2: EXPANDED -->
+<div class="rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col">
+<button class="w-full px-space-md py-space-sm bg-surface-container-low hover:bg-surface-container flex items-center justify-between text-left transition-colors cursor-pointer" onclick="togglePractice('practice-edm01-02', this)" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-code-sm text-code-sm font-bold bg-primary text-on-primary px-2 py-0.5 rounded">EDM01.02</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">
+                    Direct the governance system.
+                  </span>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-outline font-medium">5 Activities</span>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 rotate-180" data-chevron="">expand_more</span>
+</div>
+</button>
+<div class="p-space-md bg-surface-container-low/40 flex flex-col gap-space-xs" id="practice-edm01-02">
+<!-- Activity 1 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">1</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Menginformasikan prinsip tata kelola enterprise kepada seluruh jajaran manajemen dan memverifikasi kepatuhan operasional.
+                  </p>
+</div>
+<!-- Activity 2 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">2</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Menetapkan batas kewenangan dan aturan eskalasi persetujuan investasi dan inisiatif digital utama.
+                  </p>
+</div>
+<!-- Activity 3 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">3</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Menugaskan tanggung jawab kepemilikan aset informasi dan proses bisnis kepada pimpinan unit kerja yang sesuai.
+                  </p>
+</div>
+<!-- Activity 4 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">4</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Mengarahkan penetapan mekanisme komunikasi yang transparan bagi seluruh pemangku kepentingan.
+                  </p>
+</div>
+<!-- Activity 5 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">5</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Memastikan ketersediaan sumber daya dan komitmen pimpinan dalam menjaga efektivitas kerangka tata kelola.
+                  </p>
+</div>
+</div>
+</div>
+<!-- PRACTICE 3: COLLAPSED -->
+<div class="rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col">
+<button class="w-full px-space-md py-space-sm bg-surface-container-low hover:bg-surface-container flex items-center justify-between text-left transition-colors cursor-pointer" onclick="togglePractice('practice-edm01-03', this)" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-code-sm text-code-sm font-bold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">EDM01.03</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">
+                    Monitor the governance system.
+                  </span>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-outline font-medium">4 Activities</span>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200" data-chevron="">expand_more</span>
+</div>
+</button>
+<div class="p-space-md bg-surface-container-low/40 hidden flex-col gap-space-xs" id="practice-edm01-03">
+<!-- Activity 1 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">1</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Memantau efektivitas dan kinerja operasional sistem tata kelola TI terhadap metrik hasil yang direncanakan.
+                  </p>
+</div>
+<!-- Activity 2 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">2</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Melakukan peninjauan reguler terhadap kepatuhan sistem dengan regulasi eksternal dan kebijakan enterprise terkini.
+                  </p>
+</div>
+<!-- Activity 3 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">3</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Menilai perubahan lingkungan operasional atau pasar yang memicu kebutuhan pembaruan desain tata kelola.
+                  </p>
+</div>
+<!-- Activity 4 -->
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-xs flex items-start gap-space-sm">
+<span class="font-code-sm text-code-sm font-bold bg-secondary-fixed text-primary px-2 py-0.5 rounded mt-0.5 flex-shrink-0">4</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Menyampaikan laporan berkala kepada Dewan Direksi tentang integritas dan efisiensi kepemimpinan TI.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  function togglePractice(id, trigger) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const isHidden = el.classList.contains('hidden');
+    const chevron = trigger.querySelector('[data-chevron]');
+    
+    if (isHidden) {
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+      if (chevron) {
+        chevron.classList.add('rotate-180');
+      }
+    } else {
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+      if (chevron) {
+        chevron.classList.remove('rotate-180');
+      }
+    }
+  }
+</script></main></div></body></html>

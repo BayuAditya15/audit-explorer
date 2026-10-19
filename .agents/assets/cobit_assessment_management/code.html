@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#003ea8", "inverse-primary": "#b4c5ff", "secondary-container": "#dae2fd", "background": "#f7f9fb", "on-secondary-fixed-variant": "#3f465c", "inverse-on-surface": "#eff1f3", "surface-container-high": "#e6e8ea", "on-tertiary": "#ffffff", "on-surface-variant": "#434655", "on-primary": "#ffffff", "on-surface": "#191c1e", "primary-fixed-dim": "#b4c5ff", "secondary-fixed-dim": "#bec6e0", "surface-bright": "#f7f9fb", "outline-variant": "#c3c6d7", "on-primary-fixed": "#00174b", "on-tertiary-fixed": "#0b1c30", "on-secondary": "#ffffff", "primary": "#004ac6", "on-tertiary-fixed-variant": "#38485d", "tertiary-fixed-dim": "#b7c8e1", "secondary-fixed": "#dae2fd", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "surface-tint": "#0053db", "primary-fixed": "#dbe1ff", "on-primary-container": "#eeefff", "surface-dim": "#d8dadc", "tertiary": "#46566c", "on-background": "#191c1e", "on-tertiary-container": "#e9f0ff", "surface-variant": "#e0e3e5", "surface-container-highest": "#e0e3e5", "surface-container-low": "#f2f4f6", "on-secondary-fixed": "#131b2e", "tertiary-container": "#5e6e85", "error": "#ba1a1a", "outline": "#737686", "secondary": "#565e74", "inverse-surface": "#2d3133", "on-secondary-container": "#5c647a", "error-container": "#ffdad6", "primary-container": "#2563eb", "tertiary-fixed": "#d3e4fe", "surface-container": "#eceef0", "surface": "#f7f9fb" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-lg": "1rem", "space-2xl": "2rem", "margin": "1rem", "space-md": "0.75rem", "margin-desktop": "2rem", "gutter": "1.25rem", "space-2xs": "0.125rem", "space-3xl": "3rem" }, "fontFamily": { "body-md": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "display-lg": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "code-sm": ["JetBrains Mono"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "code-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "500" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-inverse-surface border-r border-outline-variant/20 z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-[68px] px-space-lg flex items-center gap-space-sm border-b border-outline-variant/10"><img alt="COBIT Explorer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Va9b63vLrgooAdWds0CaSCL4R-b6ij8Y998uF8g-oLL07cyC1yS2Ep7OpeDpuP09UbtG9On45RlntZZK6oAapRAGG7Laf1wubyCjJBfJFkUBEXf17b9F4evrA1X-ryqOxzs0VCoLmmQljDOfENsuv4eegkBo8a9E_XytQSmCYLEQcjaC3q40oeitLMbip7-LbMxdg7vNmlxI4vYqI_0MYLbM81bsD0AKnlruB6xxxJu6KxcNMb6kacWCfX"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-inverse-on-surface truncate leading-tight">COBIT Explorer</span><span class="font-label-sm text-label-sm text-outline-variant truncate leading-tight">Governance &amp; Management</span></div></div><div class="px-space-md py-space-lg"><div class="mb-space-lg"><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Main Menu</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="cobit-framework" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">COBIT Framework</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="raci-matrix" href="#"><span class="material-symbols-outlined text-[20px]">table_chart</span><span class="font-label-lg text-label-lg">RACI Matrix</span></a></nav></div><div class="mb-space-md"><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Assessment</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg bg-primary-container text-on-primary font-semibold shadow-sm transition-all" data-path="assessment" href="#"><span class="material-symbols-outlined text-[20px] fill-1">fact_check</span><span class="font-label-lg text-label-lg">Assessment</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="evidence" href="#"><span class="material-symbols-outlined text-[20px]">folder_zip</span><span class="font-label-lg text-label-lg">Evidence</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-label-lg text-label-lg">Reports</span></a></nav></div></div></div><div class="p-space-md border-t border-outline-variant/10 flex flex-col gap-space-xs bg-inverse-surface"><nav class="flex flex-col" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav><div class="flex items-center justify-between p-space-xs mt-space-2xs rounded-lg hover:bg-surface-variant/10 transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-primary ring-2 ring-inverse-surface"></span></div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-inverse-on-surface font-semibold truncate leading-tight">Ahmad Dahlan</span><span class="font-body-sm text-body-sm text-outline-variant truncate leading-tight">Lead IT Auditor</span></div></div><button class="text-outline-variant hover:text-inverse-on-surface p-space-2xs" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[250px] min-h-screen flex flex-col"><header class="fixed top-0 left-[250px] right-0 h-[68px] bg-surface-container-lowest border-b border-outline-variant/30 z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="COBIT Explorer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Va9b63vLrgooAdWds0CaSCL4R-b6ij8Y998uF8g-oLL07cyC1yS2Ep7OpeDpuP09UbtG9On45RlntZZK6oAapRAGG7Laf1wubyCjJBfJFkUBEXf17b9F4evrA1X-ryqOxzs0VCoLmmQljDOfENsuv4eegkBo8a9E_XytQSmCYLEQcjaC3q40oeitLMbip7-LbMxdg7vNmlxI4vYqI_0MYLbM81bsD0AKnlruB6xxxJu6KxcNMb6kacWCfX"/><div class="flex items-center gap-space-xs font-label-md text-label-md"><span class="text-outline">Home</span><span class="text-outline-variant">/</span><span class="text-on-surface font-medium">Assessment</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="h-9 pl-9 pr-14 w-80 bg-surface-container-low border border-outline-variant/50 rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:border-primary" placeholder="Search objectives, practices, or guidance... (Ctrl+K)" type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 font-code-sm text-code-sm text-outline bg-surface-container rounded border border-outline-variant/40">⌘K</kbd></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm cursor-pointer p-space-xs rounded-lg hover:bg-surface-container-low transition-colors"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-md text-label-md text-on-surface font-medium">Ahmad D.</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div></header><main class="flex-1 w-full pt-[68px] bg-surface"><div class="flex flex-col w-full">
+<div class="px-space-xl py-space-xl flex flex-col gap-space-xl max-w-[1440px] mx-auto w-full">
+<!-- Page Header & Action Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Assessment</h1>
+<span class="px-space-xs py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant uppercase tracking-wider">COBIT 2019</span>
+</div>
+<p class="font-body-md text-body-md text-secondary mt-space-2xs">
+          Kelola ruang lingkup, pelaksanaan, dan hasil penilaian COBIT 2019 secara objektif dan terstandarisasi.
+        </p>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors shadow-sm font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">menu_book</span>
+<span>Panduan Penilaian</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2 rounded bg-primary-container text-on-primary hover:bg-primary transition-colors shadow-sm font-label-lg text-label-lg font-medium" id="btn-open-create-modal" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Buat Assessment</span>
+</button>
+</div>
+</div>
+<!-- 4 Compact Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Total Assessments</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-space-xs font-semibold leading-none">—</span>
+<span class="font-body-sm text-body-sm text-outline mt-space-sm truncate">Belum ada siklus penilaian</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">assignment</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Draft</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-space-xs font-semibold leading-none">—</span>
+<span class="font-body-sm text-body-sm text-outline mt-space-sm truncate">Draf perencanaan</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">edit_note</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">In Progress</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-space-xs font-semibold leading-none">—</span>
+<span class="font-body-sm text-body-sm text-outline mt-space-sm truncate">Sedang berjalan</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Completed</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-space-xs font-semibold leading-none">—</span>
+<span class="font-body-sm text-body-sm text-outline mt-space-sm truncate">Telah diselesaikan</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[22px]">verified</span>
+</div>
+</div>
+</div>
+<!-- COBIT 2019 Assessment Workflow Step Indicator -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-lg bg-surface-container-low/40 -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tahapan Siklus Penilaian COBIT 2019</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-1 rounded">5 Langkah Standar ISACA</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-md relative">
+<!-- Step 1 -->
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Buat Assessment</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">Inisiasi &amp; identifikasi kebutuhan audit serta penanggung jawab.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Tentukan Ruang Lingkup</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">Pilih domain EDM, APO, BAI, DSS, MEA &amp; target objectives.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Tinjau Praktik &amp; Aktivitas</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">Verifikasi panduan kerja tata kelola dan tingkat kematangan.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">4</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Evaluasi &amp; Catat Bukti</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">Input catatan uji pemenuhan, gap analysis, &amp; tautan evidence.</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">5</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Laporan &amp; Rekomendasi</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">Review temuan audit, capability score, &amp; finalisasi laporan.</p>
+</div>
+</div>
+</div>
+<!-- Main Workspace Area -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Filter Toolbar -->
+<div class="p-space-lg bg-surface-container-lowest flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<!-- Search Input -->
+<div class="relative min-w-[260px] flex-1 max-w-sm">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Cari nama assessment..." type="text"/>
+</div>
+<!-- Status Dropdown Filter -->
+<div class="relative">
+<select class="appearance-none h-9 pl-space-md pr-8 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm cursor-pointer focus:outline-none">
+<option value="">Semua Status</option>
+<option value="draft">Draft</option>
+<option value="in_progress">In Progress</option>
+<option value="completed">Completed</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Domain Dropdown Filter -->
+<div class="relative">
+<select class="appearance-none h-9 pl-space-md pr-8 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm cursor-pointer focus:outline-none">
+<option value="">Semua Domain</option>
+<option value="edm">EDM (Evaluate, Direct, Monitor)</option>
+<option value="apo">APO (Align, Plan, Organize)</option>
+<option value="bai">BAI (Build, Acquire, Implement)</option>
+<option value="dss">DSS (Deliver, Service, Support)</option>
+<option value="mea">MEA (Monitor, Evaluate, Assess)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<button class="px-space-sm py-2 font-label-md text-label-md text-secondary hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Reset Filter</span>
+</button>
+</div>
+<!-- Sort Control -->
+<div class="flex items-center gap-space-xs shrink-0 self-end lg:self-auto">
+<div class="relative">
+<select class="appearance-none h-9 pl-space-md pr-8 bg-surface-container-low rounded text-on-surface font-label-md text-label-md cursor-pointer focus:outline-none font-medium">
+<option value="latest">Urutkan: Terbaru</option>
+<option value="oldest">Urutkan: Terlama</option>
+<option value="name_asc">Nama (A-Z)</option>
+<option value="status">Status</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">sort</span>
+</div>
+</div>
+</div>
+<!-- Data Table with Empty State -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-md px-space-lg font-semibold" scope="col">Nama Assessment</th>
+<th class="py-space-md px-space-md font-semibold" scope="col">Ruang Lingkup</th>
+<th class="py-space-md px-space-md font-semibold" scope="col">Kerangka Kerja</th>
+<th class="py-space-md px-space-md font-semibold" scope="col">Periode Penilaian</th>
+<th class="py-space-md px-space-md font-semibold" scope="col">Lead Assessor</th>
+<th class="py-space-md px-space-md font-semibold" scope="col">Status</th>
+<th class="py-space-md px-space-md font-semibold" scope="col">Terakhir Diperbarui</th>
+<th class="py-space-md px-space-lg text-right font-semibold" scope="col">Aksi</th>
+</tr>
+</thead>
+<tbody>
+<!-- Empty State Container -->
+<tr>
+<td class="py-space-3xl px-space-xl bg-surface-container-lowest text-center" colspan="8">
+<div class="flex flex-col items-center justify-center max-w-md mx-auto">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-space-lg shadow-sm">
+<span class="material-symbols-outlined text-outline text-[32px]">folder_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">Belum ada assessment</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-space-xl text-center">
+                    Buat assessment untuk mulai menentukan ruang lingkup dan mendokumentasikan hasil evaluasi COBIT secara terstruktur dan terukur.
+                  </p>
+<button class="inline-flex items-center gap-space-xs px-space-xl py-2.5 rounded bg-primary-container text-on-primary hover:bg-primary transition-colors shadow-sm font-label-lg text-label-lg font-medium" id="btn-open-empty-modal" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Buat Assessment Pertama</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination / Footer Info -->
+<div class="py-space-md px-space-lg bg-surface-container-low/30 flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span>Menampilkan 0 dari 0 data assessment</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-low opacity-50 cursor-not-allowed" disabled="">Sebelumnya</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-low opacity-50 cursor-not-allowed" disabled="">Selanjutnya</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SLIDE-OVER / MODAL: "Buat Assessment Baru" -->
+<div aria-labelledby="slide-over-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="assessment-modal" role="dialog">
+<!-- Backdrop overlay -->
+<div class="fixed inset-0 bg-inverse-surface/40 transition-opacity backdrop-blur-xs" id="modal-backdrop"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-2xl bg-surface-container-lowest shadow-xl flex flex-col justify-between">
+<!-- Header -->
+<div class="p-space-xl bg-surface-container-low/60 flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">post_add</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface" id="slide-over-title">Buat Assessment Baru</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-space-2xs">
+              Inisiasi siklus evaluasi tata kelola berbasis COBIT 2019
+            </p>
+</div>
+<button class="p-space-xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" id="btn-close-modal" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Body (Scrollable) -->
+<div class="flex-1 overflow-y-auto p-space-xl flex flex-col gap-space-xl">
+<!-- Step 1: Basic Information -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs bg-surface-container-low/40 p-space-xs rounded">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Langkah 1</span>
+<span class="text-outline-variant text-[12px]">•</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Informasi Dasar</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface">
+                Nama Assessment <span class="text-error">*</span>
+</label>
+<input class="h-9 px-space-md bg-surface-container-low rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="e.g., Audit Tata Kelola TI Semester I 2025" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface">
+                Deskripsi Singkat
+              </label>
+<textarea class="p-space-md bg-surface-container-low rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-colors resize-none" placeholder="Tujuan evaluasi kepatuhan dan keselarasan strategi TI dengan sasaran bisnis korporasi..." rows="3"></textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface">
+                Lead Assessor <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="appearance-none w-full h-9 pl-space-md pr-8 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option selected="">Ahmad Dahlan (Lead IT Auditor)</option>
+<option>Budi Santoso (Senior Governance Specialist)</option>
+<option>Siti Rahma (Risk &amp; Compliance Officer)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Step 2: Assessment Scope -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs bg-surface-container-low/40 p-space-xs rounded">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Langkah 2</span>
+<span class="text-outline-variant text-[12px]">•</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ruang Lingkup (Scope)</span>
+</div>
+<!-- Domain Selection Chips -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Domain Tata Kelola (Governance &amp; Management)</span>
+<div class="flex flex-wrap gap-space-xs pt-1">
+<label class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded cursor-pointer transition-colors bg-primary-container text-on-primary">
+<input checked="" class="hidden" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span class="font-label-md text-label-md font-semibold">EDM</span>
+<span class="text-[10px] opacity-80">(Evaluate, Direct, Monitor)</span>
+</label>
+<label class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded cursor-pointer transition-colors bg-primary-container text-on-primary">
+<input checked="" class="hidden" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span class="font-label-md text-label-md font-semibold">APO</span>
+<span class="text-[10px] opacity-80">(Align, Plan, Organize)</span>
+</label>
+<label class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded cursor-pointer transition-colors bg-surface-container-low text-on-surface hover:bg-surface-container">
+<input class="hidden" type="checkbox"/>
+<span class="font-label-md text-label-md font-semibold">BAI</span>
+<span class="text-[10px] text-secondary">(Build, Acquire, Implement)</span>
+</label>
+<label class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded cursor-pointer transition-colors bg-surface-container-low text-on-surface hover:bg-surface-container">
+<input class="hidden" type="checkbox"/>
+<span class="font-label-md text-label-md font-semibold">DSS</span>
+<span class="text-[10px] text-secondary">(Deliver, Service, Support)</span>
+</label>
+<label class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded cursor-pointer transition-colors bg-surface-container-low text-on-surface hover:bg-surface-container">
+<input class="hidden" type="checkbox"/>
+<span class="font-label-md text-label-md font-semibold">MEA</span>
+<span class="text-[10px] text-secondary">(Monitor, Evaluate, Assess)</span>
+</label>
+</div>
+</div>
+<!-- Objectives Multi-select selector -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Pilih Governance / Management Objectives</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[16px]">search</span>
+<input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none" placeholder="Ketik kode atau nama objective (e.g. EDM01, APO01)..." type="text"/>
+</div>
+<!-- Selected Objective pills -->
+<div class="flex flex-wrap gap-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm">
+<span class="font-mono font-bold">EDM01</span>
+<span>- Framework Setting</span>
+<button class="hover:text-error ml-1 leading-none" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm">
+<span class="font-mono font-bold">EDM02</span>
+<span>- Benefits Delivery</span>
+<button class="hover:text-error ml-1 leading-none" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm">
+<span class="font-mono font-bold">APO01</span>
+<span>- Management Framework</span>
+<button class="hover:text-error ml-1 leading-none" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-medium mt-1">
+                3 Objectives dipilih (12 Praktik, 64 Aktivitas)
+              </p>
+</div>
+</div>
+<!-- Step 3: Assessment Period -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs bg-surface-container-low/40 p-space-xs rounded">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Langkah 3</span>
+<span class="text-outline-variant text-[12px]">•</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Periode Penilaian</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface">
+                  Tanggal Mulai <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-9 px-space-md bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none" type="date" value="2025-03-01"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface">
+                  Target Selesai <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-9 px-space-md bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none" type="date" value="2025-04-30"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 4: Additional Notes -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs bg-surface-container-low/40 p-space-xs rounded">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Langkah 4</span>
+<span class="text-outline-variant text-[12px]">•</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Catatan Tambahan (Notes)</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<textarea class="p-space-md bg-surface-container-low rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none resize-none" placeholder="Konteks operasional atau fokus audit, standardisasi regulasi eksternal (misal: OJK, BI, ISO 27001)..." rows="3"></textarea>
+</div>
+</div>
+</div>
+<!-- Form Footer Actions -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<button class="px-space-lg py-2 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" id="btn-cancel-modal" type="button">
+            Batal
+          </button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-2 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" type="button">
+              Simpan sebagai Draf
+            </button>
+<button class="px-space-xl py-2 rounded bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg font-semibold transition-colors shadow-sm" type="button">
+              Buat Assessment
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal Controller -->
+<script>
+    (function() {
+      const modal = document.getElementById('assessment-modal');
+      const backdrop = document.getElementById('modal-backdrop');
+      const btnOpenCreate = document.getElementById('btn-open-create-modal');
+      const btnOpenEmpty = document.getElementById('btn-open-empty-modal');
+      const btnClose = document.getElementById('btn-close-modal');
+      const btnCancel = document.getElementById('btn-cancel-modal');
+
+      function openModal() {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+
+      if (btnOpenCreate) btnOpenCreate.addEventListener('click', openModal);
+      if (btnOpenEmpty) btnOpenEmpty.addEventListener('click', openModal);
+      if (btnClose) btnClose.addEventListener('click', closeModal);
+      if (btnCancel) btnCancel.addEventListener('click', closeModal);
+      if (backdrop) backdrop.addEventListener('click', closeModal);
+
+      // Keyboard Esc escape support
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+</div></main></div></body></html>

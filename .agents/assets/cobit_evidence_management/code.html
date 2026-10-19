@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#003ea8", "inverse-primary": "#b4c5ff", "secondary-container": "#dae2fd", "background": "#f7f9fb", "on-secondary-fixed-variant": "#3f465c", "inverse-on-surface": "#eff1f3", "surface-container-high": "#e6e8ea", "on-tertiary": "#ffffff", "on-surface-variant": "#434655", "on-primary": "#ffffff", "on-surface": "#191c1e", "primary-fixed-dim": "#b4c5ff", "secondary-fixed-dim": "#bec6e0", "surface-bright": "#f7f9fb", "outline-variant": "#c3c6d7", "on-primary-fixed": "#00174b", "on-tertiary-fixed": "#0b1c30", "on-secondary": "#ffffff", "primary": "#004ac6", "on-tertiary-fixed-variant": "#38485d", "tertiary-fixed-dim": "#b7c8e1", "secondary-fixed": "#dae2fd", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "surface-tint": "#0053db", "primary-fixed": "#dbe1ff", "on-primary-container": "#eeefff", "surface-dim": "#d8dadc", "tertiary": "#46566c", "on-background": "#191c1e", "on-tertiary-container": "#e9f0ff", "surface-variant": "#e0e3e5", "surface-container-highest": "#e0e3e5", "surface-container-low": "#f2f4f6", "on-secondary-fixed": "#131b2e", "tertiary-container": "#5e6e85", "error": "#ba1a1a", "outline": "#737686", "secondary": "#565e74", "inverse-surface": "#2d3133", "on-secondary-container": "#5c647a", "error-container": "#ffdad6", "primary-container": "#2563eb", "tertiary-fixed": "#d3e4fe", "surface-container": "#eceef0", "surface": "#f7f9fb" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-lg": "1rem", "space-2xl": "2rem", "margin": "1rem", "space-md": "0.75rem", "margin-desktop": "2rem", "gutter": "1.25rem", "space-2xs": "0.125rem", "space-3xl": "3rem" }, "fontFamily": { "body-md": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "display-lg": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "code-sm": ["JetBrains Mono"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "code-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "500" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-inverse-surface border-r border-outline-variant/20 z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-[68px] px-space-lg flex items-center gap-space-sm border-b border-outline-variant/10"><img alt="COBIT Explorer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Va9b63vLrgooAdWds0CaSCL4R-b6ij8Y998uF8g-oLL07cyC1yS2Ep7OpeDpuP09UbtG9On45RlntZZK6oAapRAGG7Laf1wubyCjJBfJFkUBEXf17b9F4evrA1X-ryqOxzs0VCoLmmQljDOfENsuv4eegkBo8a9E_XytQSmCYLEQcjaC3q40oeitLMbip7-LbMxdg7vNmlxI4vYqI_0MYLbM81bsD0AKnlruB6xxxJu6KxcNMb6kacWCfX"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-inverse-on-surface truncate leading-tight">COBIT Explorer</span><span class="font-label-sm text-label-sm text-outline-variant truncate leading-tight">Governance &amp; Management</span></div></div><div class="px-space-md py-space-lg"><div class="mb-space-lg"><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Main Menu</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="cobit-framework" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">COBIT Framework</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="raci-matrix" href="#"><span class="material-symbols-outlined text-[20px]">table_chart</span><span class="font-label-lg text-label-lg">RACI Matrix</span></a></nav></div><div class="mb-space-md"><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Assessment</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="assessment" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-label-lg text-label-lg">Assessment</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm transition-all bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm" data-path="evidence" href="#"><span class="material-symbols-outlined text-[20px] fill-1">folder_zip</span><span class="font-label-lg text-label-lg">Evidence</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-label-lg text-label-lg">Reports</span></a></nav></div></div></div><div class="p-space-md border-t border-outline-variant/10 flex flex-col gap-space-xs bg-inverse-surface"><nav class="flex flex-col" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav><div class="flex items-center justify-between p-space-xs mt-space-2xs rounded-lg hover:bg-surface-variant/10 transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-primary ring-2 ring-inverse-surface"></span></div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-inverse-on-surface font-semibold truncate leading-tight">Ahmad Dahlan</span><span class="font-body-sm text-body-sm text-outline-variant truncate leading-tight">Lead IT Auditor</span></div></div><button class="text-outline-variant hover:text-inverse-on-surface p-space-2xs" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[250px] min-h-screen flex flex-col"><header class="fixed top-0 left-[250px] right-0 h-[68px] bg-surface-container-lowest border-b border-outline-variant/30 z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="COBIT Explorer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Va9b63vLrgooAdWds0CaSCL4R-b6ij8Y998uF8g-oLL07cyC1yS2Ep7OpeDpuP09UbtG9On45RlntZZK6oAapRAGG7Laf1wubyCjJBfJFkUBEXf17b9F4evrA1X-ryqOxzs0VCoLmmQljDOfENsuv4eegkBo8a9E_XytQSmCYLEQcjaC3q40oeitLMbip7-LbMxdg7vNmlxI4vYqI_0MYLbM81bsD0AKnlruB6xxxJu6KxcNMb6kacWCfX"/><div class="flex items-center gap-space-xs font-label-md text-label-md"><span class="text-outline">Home</span><span class="text-outline-variant">/</span><span class="text-on-surface font-medium">Evidence</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="h-9 pl-9 pr-14 w-80 bg-surface-container-low border border-outline-variant/50 rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:border-primary" placeholder="Search objectives, practices, or guidance... (Ctrl+K)" type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 font-code-sm text-code-sm text-outline bg-surface-container rounded border border-outline-variant/40">⌘K</kbd></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm cursor-pointer p-space-xs rounded-lg hover:bg-surface-container-low transition-colors"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-md text-label-md text-on-surface font-medium">Ahmad D.</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div></header><main class="flex-1 w-full pt-[68px] bg-surface"><div class="flex flex-col w-full">
+<!-- Content Canvas Area -->
+<div class="px-space-xl py-space-xl flex flex-col gap-space-xl">
+<!-- PAGE HEADER -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Evidence Management</h1>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm uppercase tracking-wider bg-surface-container text-tertiary">Audit Cycle 2024.1</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Kelola bukti pendukung dan keterkaitannya dengan assessment COBIT.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-3.5 h-9 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">menu_book</span>
+<span>Panduan Evidence</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-4 h-9 bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-sm hover:bg-primary transition-colors" id="openUploadBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Tambah Evidence</span>
+</button>
+</div>
+</div>
+<!-- SUMMARY METRIC CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between min-h-[110px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">TOTAL EVIDENCE</span>
+<div class="w-8 h-8 rounded bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">—</span>
+<span class="font-label-sm text-label-sm text-outline">dokumen</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Belum ada bukti tersimpan</span>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between min-h-[110px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">PENDING REVIEW</span>
+<div class="w-8 h-8 rounded bg-surface-container-low flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">—</span>
+<span class="font-label-sm text-label-sm text-outline">item</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Menunggu verifikasi auditor</span>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between min-h-[110px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">VERIFIED</span>
+<div class="w-8 h-8 rounded bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">—</span>
+<span class="font-label-sm text-label-sm text-outline">item</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Telah diverifikasi valid</span>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between min-h-[110px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">NEEDS REVISION</span>
+<div class="w-8 h-8 rounded bg-surface-container-low flex items-center justify-center text-error group-hover:bg-error group-hover:text-on-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">error</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">—</span>
+<span class="font-label-sm text-label-sm text-outline">item</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Perlu revisi / dokumen tambahan</span>
+</div>
+</div>
+<!-- EVIDENCE WORKFLOW / TRACEABILITY BANNER -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px]">account_tree</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Alur Verifikasi Bukti &amp; Keterlacakan COBIT 2019</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified_user</span> ISO/IEC 38500 &amp; ISACA Rigor Guaranteed
+        </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-1 relative">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-primary font-bold">TAHAP 01</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">upload_file</span>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface">Unggah Bukti</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Dokumen, screenshot, notulensi wawancara, SOP, atau log sistem operasional.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-1 relative">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-primary font-bold">TAHAP 02</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">hub</span>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface">Pemetaan COBIT</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Hubungkan ke Domain (EDM, APO, BAI, DSS, MEA), Objective, &amp; Praktik Spesifik.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-1 relative">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-primary font-bold">TAHAP 03</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">find_in_page</span>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface">Telaah Auditor</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Verifikasi keabsahan, kecukupan, dan relevansi bukti terhadap kriteria governance.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-1 relative">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-primary font-bold">TAHAP 04</span>
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface">Status Terverifikasi</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Dukungan valid untuk kalkulasi capability level assessment COBIT 2019.
+          </p>
+</div>
+</div>
+</div>
+<!-- FILTER TOOLBAR -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<!-- Search input -->
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="h-9 pl-9 pr-3 w-full bg-surface-container-low rounded text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container" placeholder="Cari nama atau kode evidence..." type="text"/>
+</div>
+<!-- Filter 1: Assessment -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none appearance-none cursor-pointer">
+<option>Semua Assessment</option>
+<option>Assessment Tata Kelola TI Semester I 2024</option>
+<option>Audit Keamanan Siber Q4 2023</option>
+<option>Kepatuhan IT Service Continuity 2024</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Filter 2: Domain -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none appearance-none cursor-pointer">
+<option>Semua Domain</option>
+<option>EDM — Evaluate, Direct &amp; Monitor</option>
+<option>APO — Align, Plan &amp; Organize</option>
+<option>BAI — Build, Acquire &amp; Implement</option>
+<option>DSS — Deliver, Service &amp; Support</option>
+<option>MEA — Monitor, Evaluate &amp; Assess</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Filter 3: Status -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none appearance-none cursor-pointer">
+<option>Semua Status</option>
+<option>Pending Review</option>
+<option>Verified</option>
+<option>Needs Revision</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Filter 4: Jenis -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none appearance-none cursor-pointer">
+<option>Semua Jenis</option>
+<option>Document (PDF/DOC)</option>
+<option>Screenshot (PNG/JPG)</option>
+<option>Interview Notes</option>
+<option>Policy / Procedure (SOP)</option>
+<option>Audit / Metric Report</option>
+<option>Other / Log Files</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Reset Button -->
+<button class="text-tertiary hover:text-on-surface text-label-sm font-label-sm px-2 py-1 flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">filter_alt_off</span>
+          Reset Filter
+        </button>
+</div>
+<!-- Right: Sort Control -->
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-sm text-label-sm text-outline">Urutkan:</span>
+<div class="relative">
+<select class="h-9 px-3 pr-8 bg-surface-container-low rounded text-on-surface font-label-md text-label-md focus:outline-none appearance-none cursor-pointer">
+<option>Terbaru</option>
+<option>Terlama</option>
+<option>Kode (A-Z)</option>
+<option>Prioritas Verifikasi</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- MAIN EVIDENCE REGISTER & DATA PRESENTATION -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col">
+<!-- Section Tabs & Register Toolbar -->
+<div class="bg-surface-container-low px-space-lg py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm flex items-center gap-2 transition-all" id="tabActiveBtn" type="button">
+<span>Daftar Utama</span>
+<span class="bg-surface-container px-1.5 py-0.2 rounded font-code-sm text-code-sm text-on-surface">0 Bukti Aktif</span>
+</button>
+<button class="px-3 py-1.5 rounded font-label-md text-label-md text-tertiary hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2" id="tabPreviewBtn" type="button">
+<span>Pratinjau Format / Contoh Register</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-semibold px-1.5 py-0.5 rounded">Mode Contoh</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1 text-label-sm font-label-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" id="triggerDrawerBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">dock_to_right</span>
+<span>Simulasi Panel Inspeksi Auditor</span>
+</button>
+</div>
+</div>
+<!-- TABLE CONTAINER -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70">
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">KODE EVIDENCE</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">NAMA EVIDENCE</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">JENIS EVIDENCE</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">TERKAIT OBJECTIVE / PRAKTIK</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">ASSESSMENT</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">DIUNGGAH OLEH</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">TANGGAL</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">STATUS VERIFIKASI</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline text-right">AKSI</th>
+</tr>
+</thead>
+<!-- Primary View: Empty State -->
+<tbody id="emptyStateBody">
+<tr>
+<td class="py-16 px-4" colspan="9">
+<div class="flex flex-col items-center justify-center text-center max-w-lg mx-auto">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-space-md shadow-inner">
+<span class="material-symbols-outlined text-[32px] text-tertiary">folder_open</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Belum ada evidence</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+                    Tambahkan dokumen, screenshot, atau catatan wawancara sebagai bukti pendukung penilaian COBIT untuk memperkuat objektivitas temuan audit.
+                  </p>
+<button class="inline-flex items-center gap-space-xs px-4 h-9 bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-sm hover:bg-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Tambah Evidence Pertama</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+<!-- Interactive View: Sample Data Body (Toggled via "Pratinjau Format / Contoh Register") -->
+<tbody class="hidden divide-y divide-surface-container" id="sampleDataBody">
+<!-- Sample Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="toggleAuditorDrawer(true)">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-primary font-semibold">EVD-2024-EDM01-001</td>
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error">picture_as_pdf</span>
+<span class="truncate max-w-[220px]">SOP-TI-01: Piagam Tata Kelola TI &amp; SK Direksi Penugasan</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container text-tertiary font-medium">Policy / Procedure</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-semibold">EDM01.01</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[180px]">Evaluate the governance system</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[150px]">Assessment TI Semester I 2024</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">Budi Santoso</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">12 Okt 2024</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-label-sm bg-secondary-fixed text-on-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Pending Review
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 text-outline hover:text-on-surface rounded hover:bg-surface-container transition-colors" title="Buka Detail" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Sample Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="toggleAuditorDrawer(true)">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-primary font-semibold">EVD-2024-APO12-004</td>
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">analytics</span>
+<span class="truncate max-w-[220px]">Laporan Risk Assessment &amp; Risk Register TI 2024</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm bg-primary-fixed text-on-primary-fixed font-medium">Report</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-semibold">APO12.02</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[180px]">Analyze risk</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[150px]">Assessment TI Semester I 2024</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">Ratna Kusuma</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">08 Okt 2024</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-label-sm bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Verified
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 text-outline hover:text-on-surface rounded hover:bg-surface-container transition-colors" title="Buka Detail" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Sample Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="toggleAuditorDrawer(true)">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-primary font-semibold">EVD-2024-DSS05-012</td>
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">image</span>
+<span class="truncate max-w-[220px]">Tangkapan Layar Dashboard SIEM Log Alert SOC</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container text-tertiary font-medium">Screenshot</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-semibold">DSS05.04</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[180px]">Manage user identity &amp; access</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[150px]">Assessment TI Semester I 2024</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">Gilang Pratama</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">05 Okt 2024</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-label-sm bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Needs Revision
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 text-outline hover:text-on-surface rounded hover:bg-surface-container transition-colors" title="Buka Detail" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- FOOTER & PAGINATION -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="footerInfoText">Menampilkan 0 dari 0 data evidence</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-surface-container text-outline font-label-sm text-label-sm cursor-not-allowed" disabled="" type="button">
+            Sebelumnya
+          </button>
+<div class="w-7 h-7 rounded bg-surface-container-lowest font-code-sm text-code-sm flex items-center justify-center text-on-surface font-semibold shadow-xs">
+            1
+          </div>
+<button class="px-3 py-1 rounded bg-surface-container text-outline font-label-sm text-label-sm cursor-not-allowed" disabled="" type="button">
+            Selanjutnya
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SIDE DRAWER: DETAIL & KETERLACAKAN EVIDENCE (Auditor Inspection) -->
+<div class="fixed inset-y-0 right-0 w-full sm:w-[500px] lg:w-[540px] bg-surface-container-lowest shadow-2xl z-50 flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out" id="evidenceDrawer">
+<!-- Drawer Header -->
+<div class="h-[68px] px-space-lg flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm text-primary font-bold">EVD-2024-EDM01-001</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-label-sm bg-secondary-fixed text-on-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Pending Review
+        </span>
+</div>
+<button class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors" id="closeDrawerBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Body -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-lg">
+<!-- Title & Basic Info -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">NAMA ARTIFAK BUKTI</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">
+          SOP-TI-01: Piagam Tata Kelola TI &amp; SK Direksi Penugasan
+        </h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container text-tertiary">Policy / Procedure</span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">.pdf • 2.4 MB</span>
+</div>
+</div>
+<!-- File Preview Box -->
+<div class="p-space-md rounded bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface truncate">SOP-TI-01_Governance_Charter_2024_Signed.pdf</span>
+<span class="font-body-sm text-body-sm text-outline">SHA256: 7f8a92...e41b</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-8 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs hover:bg-surface-container flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Buka Pratinjau</span>
+</button>
+<button class="flex-1 h-8 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs hover:bg-surface-container flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Unduh File</span>
+</button>
+</div>
+</div>
+<!-- Section: Keterlacakan COBIT 2019 (Traceability) -->
+<div class="p-space-md rounded-lg bg-surface-container-low/50 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">account_tree</span>
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Keterlacakan COBIT 2019 (Traceability)</h4>
+</div>
+<div class="space-y-2.5 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Assessment:</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Assessment Tata Kelola TI Semester I 2024</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Domain Tata Kelola:</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">EDM</span>
+<span class="font-body-sm text-body-sm text-on-surface">Evaluate, Direct and Monitor</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">COBIT Objective:</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">EDM01 — Ensured Governance Framework Setting and Maintenance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Target Practice:</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-0.5 font-medium">EDM01.01 — Evaluate the governance system</span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-2.5 rounded">
+<span class="font-label-sm text-label-sm text-outline">Target Specific Activity:</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 leading-relaxed">
+<strong class="font-code-sm text-code-sm text-primary">EDM01.01.01:</strong> Mengidentifikasi dan memahami semua sumber panduan tata kelola eksternal dan internal (peraturan perundangan, kode etik industri, dan arahan pemegang saham).
+            </p>
+</div>
+</div>
+</div>
+<!-- Section: Informasi Pengunggah & Riwayat Review -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">history_edu</span>
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Informasi Pengunggah &amp; Riwayat Review</h4>
+</div>
+<div class="space-y-2 bg-surface-container-low p-space-md rounded">
+<div class="flex justify-between items-start text-body-sm">
+<span class="text-outline font-label-sm">Diunggah oleh:</span>
+<div class="text-right">
+<div class="font-medium text-on-surface">Budi Santoso</div>
+<div class="text-[11px] text-outline">IT Compliance Specialist • 12 Okt 2024, 14:20</div>
+</div>
+</div>
+<div class="flex justify-between items-start text-body-sm pt-2">
+<span class="text-outline font-label-sm">Reviewer Auditor:</span>
+<div class="text-right">
+<div class="font-medium text-on-surface">Ahmad Dahlan</div>
+<div class="text-[11px] text-outline">Lead IT Auditor</div>
+</div>
+</div>
+<div class="pt-2 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">Catatan Verifikasi Auditor:</span>
+<div class="p-2.5 rounded bg-surface-container-lowest font-body-sm text-body-sm text-on-surface leading-relaxed">
+              “Dokumen telah mencakup SK Direksi terbaru namun lampiran struktur komite pengarah TI perlu dilengkapi untuk memenuhi seluruh parameter bukti aktivitas EDM01.01.01.”
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Action Footer -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<button class="px-3 h-9 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-colors" type="button">
+          Tolak
+        </button>
+<button class="px-3 h-9 rounded bg-error-container text-on-error-container hover:bg-error/20 font-label-md text-label-md transition-colors" type="button">
+          Minta Revisi
+        </button>
+</div>
+<button class="px-4 h-9 rounded bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Verifikasi Bukti</span>
+</button>
+</div>
+</div>
+<!-- Drawer Backdrop -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-40 hidden transition-opacity duration-300" id="drawerBackdrop"></div>
+<!-- CLIENT-SIDE SCRIPT FOR INTERACTIVE STATES -->
+<script>
+    const drawer = document.getElementById('evidenceDrawer');
+    const backdrop = document.getElementById('drawerBackdrop');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const triggerDrawerBtn = document.getElementById('triggerDrawerBtn');
+    const openUploadBtn = document.getElementById('openUploadBtn');
+
+    const tabActiveBtn = document.getElementById('tabActiveBtn');
+    const tabPreviewBtn = document.getElementById('tabPreviewBtn');
+    const emptyStateBody = document.getElementById('emptyStateBody');
+    const sampleDataBody = document.getElementById('sampleDataBody');
+    const footerInfoText = document.getElementById('footerInfoText');
+
+    function toggleAuditorDrawer(show) {
+      if (show) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+    }
+
+    triggerDrawerBtn.addEventListener('click', () => toggleAuditorDrawer(true));
+    closeDrawerBtn.addEventListener('click', () => toggleAuditorDrawer(false));
+    backdrop.addEventListener('click', () => toggleAuditorDrawer(false));
+    openUploadBtn.addEventListener('click', () => {
+      alert("Modal Unggah Bukti: Buka form unggah file & pemetaan spesifik COBIT 2019.");
+    });
+
+    // Tab Switching: Clean Empty State vs Sample Register Preview
+    tabActiveBtn.addEventListener('click', () => {
+      tabActiveBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabActiveBtn.classList.remove('text-tertiary', 'hover:bg-surface-container');
+      tabPreviewBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabPreviewBtn.classList.add('text-tertiary', 'hover:bg-surface-container');
+      
+      emptyStateBody.classList.remove('hidden');
+      sampleDataBody.classList.add('hidden');
+      footerInfoText.textContent = "Menampilkan 0 dari 0 data evidence";
+    });
+
+    tabPreviewBtn.addEventListener('click', () => {
+      tabPreviewBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabPreviewBtn.classList.remove('text-tertiary', 'hover:bg-surface-container');
+      tabActiveBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabActiveBtn.classList.add('text-tertiary', 'hover:bg-surface-container');
+
+      emptyStateBody.classList.add('hidden');
+      sampleDataBody.classList.remove('hidden');
+      footerInfoText.textContent = "Menampilkan 3 dari 3 data evidence (Mode Pratinjau Format)";
+    });
+  </script>
+</div></main></div></body></html>
