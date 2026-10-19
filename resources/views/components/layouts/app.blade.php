@@ -67,6 +67,7 @@
                             $isOverview = request()->routeIs('cobit.overview');
                             $isFramework = request()->routeIs('cobit.framework');
                             $isRaci = request()->routeIs('raci.matrix');
+                            $isResearch = request()->routeIs('research.hub');
                         @endphp
 
                         <a 
@@ -91,6 +92,14 @@
                         >
                             <span class="material-symbols-outlined text-[19px]">table_chart</span>
                             <span>RACI Matrix</span>
+                        </a>
+
+                        <a 
+                            href="{{ route('research.hub') }}" 
+                            class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-medium transition-all {{ $isResearch ? 'bg-primary-container text-on-primary font-semibold shadow-sm' : 'text-inverse-on-surface/80 hover:bg-surface-variant/10 hover:text-inverse-on-surface' }}"
+                        >
+                            <span class="material-symbols-outlined text-[19px]">menu_book</span>
+                            <span>Research &amp; Methodology</span>
                         </a>
                     </nav>
                 </div>

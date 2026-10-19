@@ -24,4 +24,7 @@ Route::middleware('auth')->group(function () {
 
     Route::livewire('/raci-matrix', 'raci-matrix')
         ->name('raci.matrix');
+
+    Route::livewire('/research-methodology', 'research-hub')
+        ->name('research.hub');
 });
