@@ -34,9 +34,14 @@
   - Sempurnakan filter per role, per domain, dan per practice, query string sync, serta tombol cetak matriks.
   - Test `tests/Feature/RaciMatrixTest.php` (9 test, 32 assertion lulus).
 
-- [ ] **T3 — Menu Research / Diagnostic Workspace**
-  - Sediakan telaah instrumen awareness diagnostic (dari Excel Toolkit ISACA COBIT 2019 Management Awareness Diagnostic).
-  - Integrasikan pemetaan domain dan panduan implementasi tata kelola.
+- [x] **T3 — Research & Methodology Hub (Standar Resmi ISACA COBIT 2019) (`/research-methodology`)**
+  - Sediakan landasan teori resmi ISACA: Pemisahan wewenang Governance vs Management, 6 Prinsip Sistem Tata Kelola (Figure 3.1), 3 Prinsip Kerangka Kerja Tata Kelola (Figure 3.2), COBIT Goals Cascade (Figure 4.16: Stakeholder Needs -> 13 EG -> 13 AG -> 40 Objectives), 7 Komponen Tata Kelola (Figure 4.1), serta 11 Design Factors & 3 Dampak Desain (Figure 4.4 & 7.1).
+  - Tampilkan rincian 5 domain & 40 subdomain (COBIT objectives) lengkap dengan Purpose Statement resmi.
+  - Dokumentasikan alur metodologi perancangan sistem 4 tahapan ISACA (Stage 1 s.d Stage 4 - Figure 7.2), skala kapabilitas proses CMMI 0–5, kriteria skor NPLF (0-15%, >15-50%, >50-85%, >85-100%), aturan emas milestone ISACA (Milestone Rule), dan formula matematis Gap Analysis (GAP = Target - Current).
+  - Sertakan prinsip penugasan matriks RACI resmi ISACA (prinsip tunggal Accountable per aktivitas).
+  - Sediakan glosarium istilah baku COBIT 2019 interaktif dengan filter pencarian instan.
+  - Sediakan matriks studi komparatif penelitian terdahulu (State of the Art) untuk referensi Bab 2.
+  - Test `tests/Feature/ResearchHubTest.php` (6 test, 44 assertion lulus).
 
 ## Kriteria selesai
 Tugas ditandai DONE hanya setelah implementasi nyata dan pemeriksaan yang relevan. Catat blocker konkret; jangan mengulang audit menyeluruh.
